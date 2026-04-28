@@ -1,6 +1,6 @@
 ---
 name: Report a broken link or outdated info
-about: Quick fix needed — link rot, deprecated spec, etc.
+about: Quick fix needed for link rot, a deprecated spec, or similar.
 title: "[Fix] "
 labels: bug, good first issue
 ---

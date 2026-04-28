@@ -1,6 +1,6 @@
 # Awesome AI Website Files
 
-> All the AI files your website should have to be crawlable, parsable, discoverable, and to drive traffic — with copy-paste prompts to generate each one.
+> All the AI files your website should have to be crawlable, parsable, discoverable, and to drive traffic, with copy-paste prompts to generate each one.
 
 [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md) [![License: CC0](https://img.shields.io/badge/License-CC0-blue.svg)](LICENSE)
 
@@ -44,7 +44,7 @@ Developers, add: [`AGENTS.md`](prompts/agents-md.md) in your repo root.
 
 Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 
-### Permission files — control AI training and crawling
+### Permission files: control AI training and crawling
 
 | File                | Status | Path                       | AI prompt                           | Spec                                                                                                      |
 | ------------------- | ------ | -------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
@@ -53,18 +53,18 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 | `tdmrep.json`       | ✅ EU  | `/.well-known/tdmrep.json` | [View →](prompts/tdmrep-json.md)     | [W3C](https://w3c.github.io/tdm-reservation-protocol/spec/)                                               |
 | AI meta tags        | ⚠️     | HTML `<head>`              | [View →](prompts/ai-meta-tags.md)    | [IPTC](https://iptc.org/std/guidelines/data-mining-opt-out/IPTC-Generative-AI-Opt-Out-Best-Practices.pdf) |
 
-### Visibility files — help AI find and understand your content
+### Visibility files: help AI find and understand your content
 
 | File                    | Status | Path               | AI prompt                              | Spec                                                                                   |
 | ----------------------- | ------ | ------------------ | ----------------------------------- | -------------------------------------------------------------------------------------- |
-| `llms.txt`              | ⚠️     | `/llms.txt`        | [View →](prompts/llms-txt.md)           | [llmstxt.org](https://llmstxt.org/)                                                    |
-| `llms-full.txt`         | ⚠️     | `/llms-full.txt`   | [View →](prompts/llms-full-txt.md)      | [convention](https://www.mintlify.com/blog/how-to-generate-llmstxt-file-automatically) |
-| `.md` page routes       | ⚠️     | `/page.md`         | [View →](prompts/md-routes.md)          | [llmstxt.org](https://llmstxt.org/)                                                    |
+| `llms.txt`              | ⚠️     | `/llms.txt`        | [View →](prompts/llms-txt.md)       | [llmstxt.org](https://llmstxt.org/)                                                    |
+| `llms-full.txt`         | ⚠️     | `/llms-full.txt`   | [View →](prompts/llms-full-txt.md)  | [convention](https://www.mintlify.com/blog/how-to-generate-llmstxt-file-automatically) |
+| `.md` page routes       | ⚠️     | `/page.md`         | [View →](prompts/md-routes.md)      | [llmstxt.org](https://llmstxt.org/)                                                    |
 | Markdown link discovery | ✅     | `<head>` + headers | [View →](prompts/markdown-discovery.md) | HTTP                                                                                   |
-| Hidden AI hint div      | ⚠️     | `<body>`           | [View →](prompts/ai-hint-div.md)        | convention                                                                             |
-| `schema.org` JSON-LD    | ✅     | `<script>` block   | [View →](prompts/schema-jsonld.md)      | [schema.org](https://schema.org)                                                       |
+| Hidden AI hint div      | ⚠️     | `<body>`           | [View →](prompts/ai-hint-div.md)    | convention                                                                             |
+| `schema.org` JSON-LD    | ✅     | `<script>` block   | [View →](prompts/schema-jsonld.md)  | [schema.org](https://schema.org)                                                       |
 
-### Agent files — make your site queryable by AI agents
+### Agent files: make your site queryable by AI agents
 
 | File                    | Status | Path                           | AI prompt                           | Spec                                                  |
 | ----------------------- | ------ | ------------------------------ | -------------------------------- | ----------------------------------------------------- |
@@ -72,7 +72,7 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 | `agent-card.json` (A2A) | 🚀     | `/.well-known/agent-card.json` | [View →](prompts/agent-card-json.md) | [A2A](https://a2a-protocol.org/)                      |
 | `mcp.json`              | 🚀     | `/.well-known/mcp.json`        | [View →](prompts/mcp-json.md)        | [MCP](https://modelcontextprotocol.io/)               |
 
-### Coding agent files — for repos, not websites
+### Coding agent files: for repos, not websites
 
 | File        | Status | Path         | AI prompt                     | Spec                            |
 | ----------- | ------ | ------------ | -------------------------- | ------------------------------- |
@@ -93,14 +93,14 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 
 How to actually ship these files on your stack:
 
-- [WordPress](files/platforms/wordpress.md) — plugins (Yoast, Rank Math) or manual upload
-- [Shopify](files/platforms/shopify.md) — workarounds for no root file access
-- [Squarespace](files/platforms/squarespace.md) — code injection + hosted file workaround
-- [Webflow](files/platforms/webflow.md) — Project Settings > Custom Code
-- [Wix](files/platforms/wix.md) — premium plan workarounds
-- [Next.js](files/platforms/nextjs.md) — `public/` directory or route handlers
-- [Astro / Hugo / static](files/platforms/static.md) — drop in root
-- [Custom server](files/platforms/custom.md) — middleware patterns
+- [WordPress](files/platforms/wordpress.md): plugins (Yoast, Rank Math) or manual upload
+- [Shopify](files/platforms/shopify.md): workarounds for no root file access
+- Squarespace: code injection + hosted file workaround _(coming soon)_
+- Webflow: Project Settings > Custom Code _(coming soon)_
+- Wix: premium plan workarounds _(coming soon)_
+- Next.js: `public/` directory or route handlers _(coming soon)_
+- Astro / Hugo / static: drop in root _(coming soon)_
+- Custom server: middleware patterns _(coming soon)_
 
 ---
 
@@ -108,10 +108,10 @@ How to actually ship these files on your stack:
 
 See what working files actually look like in production:
 
-- [`examples/llms-txt/`](examples/llms-txt/) — Anthropic, Stripe, Cloudflare, Perplexity, Vercel
-- [`examples/agents-md/`](examples/agents-md/) — open source repos doing it well
-- [`examples/robots-txt/`](examples/robots-txt/) — AI-aware configurations
-- [`examples/tdmrep/`](examples/tdmrep/) — Elsevier, Springer Nature, IEEE
+- [`examples/llms-txt/`](examples/llms-txt/): Anthropic, Stripe, Cloudflare, Perplexity, Vercel
+- [`examples/agents-md/`](examples/agents-md/): open source repos doing it well
+- [`examples/robots-txt/`](examples/robots-txt/): AI-aware configurations
+- [`examples/tdmrep/`](examples/tdmrep/): Elsevier, Springer Nature, IEEE
 
 ---
 
@@ -119,22 +119,22 @@ See what working files actually look like in production:
 
 These show up in other guides but don't belong here. See [`files/myths.md`](files/myths.md) for the full breakdown.
 
-- `security.txt` — real, useful, not AI-related
-- `<meta name="ai-content-url">` — no spec, no implementation
-- `<meta name="llms">` — submitted to WHATWG, [closed as not planned](https://github.com/whatwg/html/issues/11548)
-- `/.well-known/ai.txt` — multiple competing proposals, no adoption
-- HTML comments for AI — most parsers strip them
-- User-Agent sniffing — that's cloaking; use `Accept: text/markdown` instead
+- `security.txt`: real, useful, not AI-related
+- `<meta name="ai-content-url">`: no spec, no implementation
+- `<meta name="llms">`: submitted to WHATWG, [closed as not planned](https://github.com/whatwg/html/issues/11548)
+- `/.well-known/ai.txt`: multiple competing proposals, no adoption
+- HTML comments for AI: most parsers strip them
+- User-Agent sniffing: that's cloaking; use `Accept: text/markdown` instead
 
 ---
 
 ## Resources
 
 - [llmstxt.org](https://llmstxt.org/) · [agents.md](https://agents.md/) · [a2a-protocol.org](https://a2a-protocol.org/) · [modelcontextprotocol.io](https://modelcontextprotocol.io/)
-- [ai-robots-txt](https://github.com/ai-robots-txt/ai.robots.txt) — community AI bot list
-- [GEO research paper](https://arxiv.org/abs/2311.09735) — Princeton/Georgia Tech/IIT Delhi/AI2
+- [ai-robots-txt](https://github.com/ai-robots-txt/ai.robots.txt): community AI bot list
+- [GEO research paper](https://arxiv.org/abs/2311.09735): Princeton/Georgia Tech/IIT Delhi/AI2
 
-📖 **[Full guide with the why and context →](https://YOUR-BLOG-URL-HERE)**
+📖 **[Full guide with the why and context →](https://www.tristandenyer.com/work/ai-files-for-websites-2026)**
 
 ---
 
@@ -144,4 +144,4 @@ PRs welcome. See [CONTRIBUTING.md](CONTRIBUTING.md). TL;DR: spec link required, 
 
 ## License
 
-[CC0](LICENSE) — public domain. Fork it, copy it, ship it.
+[CC0](LICENSE). Public domain. Fork it, copy it, ship it.

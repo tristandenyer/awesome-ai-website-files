@@ -27,7 +27,7 @@ Real production `llms.txt` files from major sites, with notes on what each does 
 
 ## Heads up
 
-These examples are **excerpts** of the live files (the real Cloudflare files are millions of tokens). Always fetch the live URL listed at the top of each file for the current canonical version — these update frequently.
+These examples are **excerpts** of the live files (the real Cloudflare files are millions of tokens). Always fetch the live URL listed at the top of each file for the current canonical version. These update frequently.
 
 ## Adding more examples
 
@@ -37,6 +37,6 @@ PRs welcome. To add an example:
 2. Add a header comment with the source URL and date fetched
 3. Add a `# Why this is a notable example` section at the bottom explaining what's worth copying
 4. Add a row to the table above
-5. Make sure it's a *real* production file from a *real* organization — not a constructed example
+5. Make sure it's a *real* production file from a *real* organization, not a constructed example
 
 See [CONTRIBUTING.md](../../CONTRIBUTING.md) for the full contribution rules.

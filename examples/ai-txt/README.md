@@ -31,8 +31,8 @@ curl https://example.com/ai.txt
 
 There are at least two competing `ai.txt` specifications:
 
-1. **Spawning.ai's `ai.txt`** (this folder) — about training opt-out
-2. **ai-visibility.org.uk's `ai.txt`** (ADF-004) — about behavioral guidance
+1. **Spawning.ai's `ai.txt`** (this folder): about training opt-out
+2. **ai-visibility.org.uk's `ai.txt`** (ADF-004): about behavioral guidance
 
 If you submit an example, **make clear which spec it follows.** Spawning's version is the one with real adoption.
 

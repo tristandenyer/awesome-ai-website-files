@@ -1,6 +1,6 @@
 ---
 name: Update status of an existing file
-about: A file's adoption status has changed — propose updating the badge
+about: A file's adoption status has changed. Propose updating the badge.
 title: "[Status] "
 labels: status-change
 ---

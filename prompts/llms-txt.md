@@ -13,7 +13,7 @@ Generate an llms.txt for my website following the spec at https://llmstxt.org/.
 
 Site: [YOUR SITE URL]
 What my site is about (one sentence): [DESCRIBE]
-Audience: [WHO IT'S FOR — e.g., "developers building with our API", 
+Audience: [WHO IT'S FOR, e.g., "developers building with our API", 
 "parents looking for recipes", "small business owners"]
 
 Most important pages (5-15, with URLs and one-line descriptions):
@@ -35,7 +35,7 @@ Return the full file as one code block I can save at /llms.txt.
 ## Heads up
 
 - **No AI crawler reliably fetches this unprompted as of early 2026.** Real value comes when humans paste your URL into ChatGPT, or when coding agents (Cursor, Claude Code) follow links.
-- **Quality over quantity.** Mintlify recommends keeping it under 50KB. Don't dump every URL — curate.
+- **Quality over quantity.** Mintlify recommends keeping it under 50KB. Don't dump every URL; curate.
 - **Pair with `.md` routes.** The links in your `llms.txt` work much better when they resolve to clean markdown. See [`md-routes.md`](md-routes.md).
 
 ## Verify it's working
@@ -59,6 +59,6 @@ If you don't want to write it from scratch, use:
 ## See also
 
 - [Real examples: Anthropic, Stripe, Cloudflare, Vercel](../examples/llms-txt/)
-- [Platform guides — WordPress, Shopify, Squarespace, etc.](../files/platforms/)
+- [Platform guides for WordPress, Shopify, Squarespace, etc.](../files/platforms/)
 - [Spec: llmstxt.org](https://llmstxt.org/)
-- [llms-full.txt prompt](llms-full-txt.md) — the fat companion file
+- [llms-full.txt prompt](llms-full-txt.md): the fat companion file

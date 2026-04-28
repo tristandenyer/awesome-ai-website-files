@@ -42,7 +42,7 @@ Use the [`robots-txt` prompt](../../prompts/robots-txt.md) to generate the rules
 2. Online Store → Navigation → URL Redirects
 3. Redirect from `/llms.txt` to the external URL
 
-The redirect approach works but adds a hop — some AI tools may not follow it. Liquid template is more reliable.
+The redirect approach works but adds a hop, and some AI tools may not follow it. Liquid template is more reliable.
 
 ## `llms-full.txt`
 
@@ -50,7 +50,7 @@ Same workarounds as `llms.txt`. For ecommerce specifically, this is high-value: 
 
 ## `.md` routes
 
-Not natively supported. Workarounds are awkward — most Shopify stores skip this and rely on the JSON-LD that Shopify already outputs in HTML.
+Not natively supported. Workarounds are awkward, so most Shopify stores skip this and rely on the JSON-LD that Shopify already outputs in HTML.
 
 ## `schema.org` JSON-LD
 
@@ -65,7 +65,7 @@ Same root-access problem. Use the same Liquid template + redirect pattern as `ll
 
 ## `tdmrep.json`
 
-Path is `/.well-known/tdmrep.json` — needs the same external-hosting + redirect workaround. Shopify doesn't natively support `.well-known/` paths.
+Path is `/.well-known/tdmrep.json`, which needs the same external-hosting + redirect workaround. Shopify doesn't natively support `.well-known/` paths.
 
 ## NLWeb / MCP / agent files
 
@@ -88,4 +88,4 @@ If you see a 301 to a CDN URL, the redirect works but adds a hop. AI tools usual
 
 ## Community resources
 
-- [Adding LLMs.txt to Shopify](https://community.shopify.dev/t/adding-llms-txt-file-to-shopify-store/19276) — Shopify Developer Community thread with current workarounds
+- [Adding LLMs.txt to Shopify](https://community.shopify.dev/t/adding-llms-txt-file-to-shopify-store/19276): Shopify Developer Community thread with current workarounds

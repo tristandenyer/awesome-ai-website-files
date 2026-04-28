@@ -10,12 +10,12 @@ Real-world `tdmrep.json` files from publishers using the W3C Text and Data Minin
 
 Major publishers known to publish `tdmrep.json`:
 
-- **Elsevier** — typically at `/.well-known/tdmrep.json` on their journal domains
-- **Springer Nature** — across their academic publishing properties
-- **IEEE** — engineering and technical publications
-- **Sage Publishing** — academic journals
-- **Radio France** — French public broadcaster
-- **Le Parisien** — French newspaper
+- **Elsevier:** typically at `/.well-known/tdmrep.json` on their journal domains
+- **Springer Nature:** across their academic publishing properties
+- **IEEE:** engineering and technical publications
+- **Sage Publishing:** academic journals
+- **Radio France:** French public broadcaster
+- **Le Parisien:** French newspaper
 
 To check any site for a `tdmrep.json`:
 

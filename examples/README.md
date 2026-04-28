@@ -15,13 +15,13 @@ Production AI files from real sites, organized by file type. Each subfolder has 
 ## How to use these
 
 1. Pick the file type you're implementing
-2. Open the folder and read the README — it lists the patterns each example demonstrates
+2. Open the folder and read the README. It lists the patterns each example demonstrates.
 3. Find the example closest to your situation (docs site → Anthropic; multi-product → Cloudflare; e-commerce with deprecated APIs → Stripe)
 4. Pair the example with the matching prompt in [`prompts/`](../prompts/) and adapt to your site
 
 ## Adding examples
 
-PRs welcome — examples are the highest-value contribution because everyone benefits from seeing real production patterns.
+PRs welcome. Examples are the highest-value contribution because everyone benefits from seeing real production patterns.
 
 To add an example:
 

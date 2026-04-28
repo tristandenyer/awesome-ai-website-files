@@ -15,9 +15,9 @@ WordPress is the easiest platform for AI files because of the plugin ecosystem. 
 
 **Plugins that auto-generate:**
 
-- **Yoast SEO** (4M+ installs) — settings panel includes llms.txt generation, refreshes weekly via cron
-- **Rank Math SEO** — similar built-in support
-- **Website LLMs.txt** (30,000+ installs) — dedicated plugin, also tracks AI crawler hits
+- **Yoast SEO** (4M+ installs): settings panel includes llms.txt generation, refreshes weekly via cron
+- **Rank Math SEO**: similar built-in support
+- **Website LLMs.txt** (30,000+ installs): dedicated plugin, also tracks AI crawler hits
 
 **Manual way:**
 
@@ -72,11 +72,11 @@ Run **Settings → Permalinks → Save** after adding to flush rewrite rules.
 
 ## `ai.txt` (Spawning)
 
-Manual upload only — no plugin yet. Generate with the [`ai-txt-spawning` prompt](../../prompts/ai-txt-spawning.md), upload to root.
+Manual upload only; no plugin yet. Generate with the [`ai-txt-spawning` prompt](../../prompts/ai-txt-spawning.md), upload to root.
 
 ## `tdmrep.json`
 
-Manual upload to `/.well-known/tdmrep.json`. WordPress doesn't expose `.well-known/` by default — you may need to:
+Manual upload to `/.well-known/tdmrep.json`. WordPress doesn't expose `.well-known/` by default. You may need to:
 
 1. Create `.well-known/` directory in your site root via FTP
 2. Add `.htaccess` rules if Apache blocks dotfile directories:
@@ -92,7 +92,7 @@ Manual upload to `/.well-known/tdmrep.json`. WordPress doesn't expose `.well-kno
 
 ## `AGENTS.md`
 
-Not for WordPress sites — `AGENTS.md` lives in code repositories, not on websites.
+Not for WordPress sites. `AGENTS.md` lives in code repositories, not on websites.
 
 ## Verification
 

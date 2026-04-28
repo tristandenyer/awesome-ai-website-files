@@ -12,7 +12,7 @@ Real-world AI-aware `robots.txt` configurations.
 
 **1. Allow everything (default for most sites).** Don't block any AI bots. Maximum visibility, contributes content to training.
 
-**2. Allow AI search, block AI training** (the example here). The "best of both worlds" — you appear in ChatGPT/Perplexity answers but opt out of training datasets.
+**2. Allow AI search, block AI training** (the example here). The "best of both worlds" approach: you appear in ChatGPT/Perplexity answers but opt out of training datasets.
 
 **3. Block all AI bots.** Maximum protection but you become invisible in AI answers. Common for premium publishers, paywalled content, copyrighted material.
 
@@ -31,7 +31,7 @@ Most sites should allow search bots and decide separately about training bots.
 
 ## Cloudflare warning
 
-Cloudflare changed defaults to block AI bots at the network level. If your `robots.txt` says "allow" but you're on Cloudflare, check your Cloudflare dashboard — your bot management settings may be overriding `robots.txt`.
+Cloudflare changed defaults to block AI bots at the network level. If your `robots.txt` says "allow" but you're on Cloudflare, check your Cloudflare dashboard. Your bot management settings may be overriding `robots.txt`.
 
 ## Adding more examples
 

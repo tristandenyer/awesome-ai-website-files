@@ -4,7 +4,7 @@ Things that show up in other AI-files guides but don't belong on this list. Upda
 
 ## `security.txt` is not an AI file
 
-[RFC 9116](https://www.rfc-editor.org/rfc/rfc9116). Lives at `/.well-known/security.txt`. Tells security researchers where to report vulnerabilities. **Add it for hygiene** — it's a real, useful file. Just not for AI.
+[RFC 9116](https://www.rfc-editor.org/rfc/rfc9116). Lives at `/.well-known/security.txt`. Tells security researchers where to report vulnerabilities. **Add it for hygiene.** It's a real, useful file. Just not for AI.
 
 ## `<meta name="ai-content-url">`
 
@@ -40,7 +40,7 @@ A page at `/ai` or `/for-ai` describing your site. No retrieval system treats th
 if (userAgent contains "GPTBot") { serve markdown } else { serve HTML }
 ```
 
-This is cloaking. It violates Google's webmaster guidelines and can hurt your search rankings. Use `Accept: text/markdown` content negotiation instead — same URL, different representation, declared via `Vary: Accept`. See [markdown discovery](../prompts/markdown-discovery.md).
+This is cloaking. It violates Google's webmaster guidelines and can hurt your search rankings. Use `Accept: text/markdown` content negotiation instead: same URL, different representation, declared via `Vary: Accept`. See [markdown discovery](../prompts/markdown-discovery.md).
 
 ## "Submit your site to ChatGPT"
 
@@ -63,5 +63,5 @@ Counter-intuitive but worth noting: blocking AI search crawlers (like `OAI-Searc
 If you see another myth showing up in guides, open a PR. Include:
 
 1. The claimed file or technique
-2. Why it doesn't work (citation required — spec link, official statement, or empirical test)
+2. Why it doesn't work (citation required: spec link, official statement, or empirical test)
 3. The correct alternative if there is one

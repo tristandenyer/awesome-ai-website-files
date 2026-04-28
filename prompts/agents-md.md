@@ -11,7 +11,7 @@ The standard that won. 60,000+ repos. Read by Claude Code, Cursor, GitHub Copilo
 ```
 Generate an AGENTS.md for my repository following https://agents.md/.
 
-Project: [DESCRIBE — what does it do, who's it for?]
+Project: [DESCRIBE: what does it do, who's it for?]
 Primary language(s) and framework(s): [e.g., "TypeScript + Next.js 15"]
 Package manager: [npm / pnpm / yarn / pip / poetry / bundler]
 
@@ -23,13 +23,13 @@ Commands:
 - Dev server: [command]
 - Build for production: [command]
 
-Code style: [DESCRIBE or paste examples — e.g., "TypeScript strict mode, 
+Code style: [DESCRIBE or paste examples, e.g., "TypeScript strict mode, 
 single quotes, no semicolons, 100-char line limit"]
 
 Files agents must NEVER modify: [e.g., "secrets/, migrations/, vendor/, 
 generated/*"]
 
-PR / commit conventions: [DESCRIBE — title format, required checks, etc.]
+PR / commit conventions: [DESCRIBE: title format, required checks, etc.]
 
 Domain gotchas, non-obvious patterns, vocabulary: [DESCRIBE anything weird]
 
@@ -37,7 +37,7 @@ Format:
 - "Core Commands" section at the top with executable commands
 - Three-tier rules: "Always do" / "Ask first" / "Never do"
 - At least one real code example showing my style (not abstract description)
-- Under ~150 lines (this gets read on every task — token budget matters)
+- Under ~150 lines (this gets read on every task; token budget matters)
 - Plain Markdown, no required frontmatter
 
 Return as one code block.
@@ -52,7 +52,7 @@ Return as one code block.
 
 ## Verify it's working
 
-Open your repo in Cursor or run Claude Code in it. Ask it to make a small change. Watch whether it follows your code style and uses your test commands. If it doesn't, your AGENTS.md isn't specific enough — add more concrete examples.
+Open your repo in Cursor or run Claude Code in it. Ask it to make a small change. Watch whether it follows your code style and uses your test commands. If it doesn't, your AGENTS.md isn't specific enough; add more concrete examples.
 
 ## Migrating from older files
 
