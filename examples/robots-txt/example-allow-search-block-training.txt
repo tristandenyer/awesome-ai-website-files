@@ -1,0 +1,118 @@
+# Source: Composite example showing common AI-aware robots.txt patterns
+# Reference list of AI bots: https://github.com/ai-robots-txt/ai.robots.txt
+#
+# This file demonstrates the most common pattern: allow search/general 
+# crawlers, allow AI search bots (so you appear in AI answers), but block 
+# AI training-only bots.
+#
+# Adjust to match your goals. Some sites block everything; some allow 
+# everything. Read the comments before copying wholesale.
+
+# ============================================================
+# General search crawlers (Google, Bing, etc.) — allow everything
+# ============================================================
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /api/internal/
+
+# ============================================================
+# AI SEARCH bots — allow these so you appear in AI answers
+# ============================================================
+# These bots fetch your content at query time to answer user questions.
+# Blocking them removes you from ChatGPT search, Perplexity, etc.
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+# ============================================================
+# AI TRAINING bots — block these to opt out of training datasets
+# ============================================================
+# These bots crawl your content to train large language models.
+# Blocking them does NOT remove you from AI search results;
+# it only opts you out of contributing to model training data.
+
+User-agent: GPTBot
+Disallow: /
+
+User-agent: ClaudeBot
+Disallow: /
+
+User-agent: anthropic-ai
+Disallow: /
+
+User-agent: Google-Extended
+Disallow: /
+
+User-agent: CCBot
+Disallow: /
+
+User-agent: Applebot-Extended
+Disallow: /
+
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Meta-ExternalAgent
+Disallow: /
+
+User-agent: FacebookBot
+Disallow: /
+
+User-agent: Amazonbot
+Disallow: /
+
+User-agent: cohere-ai
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+User-agent: Omgilibot
+Disallow: /
+
+User-agent: ImagesiftBot
+Disallow: /
+
+User-agent: YouBot
+Disallow: /
+
+User-agent: Timpibot
+Disallow: /
+
+# ============================================================
+# Sitemaps
+# ============================================================
+Sitemap: https://example.com/sitemap.xml
+
+# ============================================================
+# Why this is a notable pattern
+# ============================================================
+# This is the "have your cake and eat it" approach:
+# - Search bots: allowed (you want to rank in Google/Bing)
+# - AI search bots: allowed (you want to appear in ChatGPT/Perplexity answers)
+# - AI training bots: blocked (you don't want to be in training datasets)
+#
+# Many sites accidentally block both AI search AND AI training bots, 
+# which means they're invisible in AI answers. Make sure you understand 
+# the difference:
+#
+#   GPTBot          → trains GPT models (block to opt out of training)
+#   OAI-SearchBot   → fetches for ChatGPT search (allow to be cited)
+#   ChatGPT-User    → fetches when user asks ChatGPT a question (allow)
+#
+# Cloudflare users: check your dashboard separately. Cloudflare may be 
+# blocking AI bots at the network level regardless of your robots.txt.

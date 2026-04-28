@@ -1,0 +1,46 @@
+# Source: https://developers.cloudflare.com/workers/llms.txt
+# Fetched: April 2026
+# Note: Truncated from original (~3,800 entries). The full file is ~3.7M tokens
+# across all Cloudflare product domains. This excerpt shows the structure
+# and the first ~50 entries to illustrate the pattern.
+
+# Workers
+
+Build, deploy, and scale serverless applications globally with low latency and minimal configuration
+
+> Use [Workers llms-full.txt](https://developers.cloudflare.com/workers/llms-full.txt) for the complete Workers documentation in a single file. That file is intended for offline indexing, bulk vectorization, or large-context models.
+>
+> For other Cloudflare products, see the [Cloudflare documentation directory](https://developers.cloudflare.com/llms.txt).
+
+## Workers documentation pages
+
+- [Demos and architectures](https://developers.cloudflare.com/workers/demos/index.md)
+- [AI Assistant](https://developers.cloudflare.com/workers/ai/index.md)
+- [Glossary](https://developers.cloudflare.com/workers/glossary/index.md)
+- [Cloudflare Workers](https://developers.cloudflare.com/workers/index.md)
+- [Playground](https://developers.cloudflare.com/workers/playground/index.md)
+- [Best practices](https://developers.cloudflare.com/workers/best-practices/index.md)
+- [Workers Best Practices](https://developers.cloudflare.com/workers/best-practices/workers-best-practices/index.md): Code patterns and configuration guidance for building fast, reliable, observable, and secure Workers.
+- [CI/CD](https://developers.cloudflare.com/workers/ci-cd/index.md): Set up continuous integration and continuous deployment for your Workers.
+- [Bindings](https://developers.cloudflare.com/workers/configuration/bindings/index.md): The various bindings that are available to Cloudflare Workers.
+- [Compatibility dates](https://developers.cloudflare.com/workers/configuration/compatibility-dates/index.md): Opt into a specific version of the Workers runtime for your Workers project.
+- [Cron Triggers](https://developers.cloudflare.com/workers/configuration/cron-triggers/index.md): Enable your Worker to be executed on a schedule.
+- [Configuration](https://developers.cloudflare.com/workers/configuration/index.md)
+- [Environment variables](https://developers.cloudflare.com/workers/configuration/environment-variables/index.md): You can add environment variables to attach text strings or JSON values to your Worker.
+- [Placement](https://developers.cloudflare.com/workers/configuration/placement/index.md): Control where your Worker runs to reduce latency.
+- [Preview URLs](https://developers.cloudflare.com/workers/configuration/previews/index.md): Preview URLs allow you to preview new versions of your project without deploying it to production.
+- [Secrets](https://developers.cloudflare.com/workers/configuration/secrets/index.md): Store sensitive information, like API keys and auth tokens, in your Worker.
+
+[... ~3,750 additional entries truncated ...]
+
+# Why this is a notable example
+
+Cloudflare's approach is structurally interesting:
+- They split llms.txt by product (workers, ai, ai-gateway, agents, etc.) rather than 
+  one massive file
+- Every link points to the .md version of the doc page (the .md routes pattern)
+- They include a top-level pointer to llms-full.txt for ingestion use cases
+- The blockquote summary explicitly tells AI tools when to use llms.txt vs. llms-full.txt
+
+For multi-product companies, this product-by-product split is more useful than 
+one flat file — an AI agent only fetches the section relevant to what it's building.

@@ -1,0 +1,74 @@
+# Source: https://docs.anthropic.com/llms.txt
+# Approximately 8,364 tokens in the live file as of late 2025.
+# Anthropic also publishes llms-full.txt at ~481,349 tokens covering 
+# their entire API documentation.
+#
+# This is a representative excerpt. Fetch the live file for the current version.
+
+# Claude API Documentation
+
+> The Claude API enables developers to integrate Claude's capabilities into their applications. This documentation covers authentication, model selection, message formatting, tool use, vision, prompt caching, batch processing, and the full range of features available through the API. For comprehensive documentation in a single file, see [llms-full.txt](https://docs.anthropic.com/llms-full.txt).
+
+## Getting started
+
+- [Overview](https://docs.anthropic.com/en/docs/welcome): Introduction to Claude and the Anthropic API
+- [Initial setup](https://docs.anthropic.com/en/docs/initial-setup): Get an API key and make your first request
+- [Intro to Claude](https://docs.anthropic.com/en/docs/intro-to-claude): Understanding Claude's capabilities and design
+
+## API reference
+
+- [Messages API](https://docs.anthropic.com/en/api/messages): The primary endpoint for interacting with Claude
+- [Streaming](https://docs.anthropic.com/en/api/messages-streaming): Stream responses for real-time output
+- [Models overview](https://docs.anthropic.com/en/docs/about-claude/models): Available Claude models and their capabilities
+- [Pricing](https://docs.anthropic.com/en/docs/about-claude/pricing): Token pricing across models
+- [Rate limits](https://docs.anthropic.com/en/api/rate-limits): API rate limits and how to handle them
+- [Errors](https://docs.anthropic.com/en/api/errors): Error codes and how to handle them
+
+## Building with Claude
+
+- [Tool use](https://docs.anthropic.com/en/docs/build-with-claude/tool-use): Give Claude access to external tools and APIs
+- [Vision](https://docs.anthropic.com/en/docs/build-with-claude/vision): Process images with Claude
+- [Prompt caching](https://docs.anthropic.com/en/docs/build-with-claude/prompt-caching): Reduce costs and latency with prompt caching
+- [Batch processing](https://docs.anthropic.com/en/api/creating-message-batches): Process large volumes of requests asynchronously
+- [Computer use](https://docs.anthropic.com/en/docs/build-with-claude/computer-use): Allow Claude to control a computer
+- [PDF support](https://docs.anthropic.com/en/docs/build-with-claude/pdf-support): Process PDF documents
+
+## Prompt engineering
+
+- [Prompt engineering overview](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/overview): Best practices for writing prompts
+- [Be clear and direct](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/be-clear-and-direct)
+- [Use examples](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/multishot-prompting)
+- [Chain of thought](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/chain-of-thought)
+- [Use XML tags](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/use-xml-tags)
+- [System prompts](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/system-prompts)
+- [Prefill Claude's response](https://docs.anthropic.com/en/docs/build-with-claude/prompt-engineering/prefill-claudes-response)
+
+## SDKs
+
+- [Python SDK](https://docs.anthropic.com/en/api/client-sdks#python)
+- [TypeScript SDK](https://docs.anthropic.com/en/api/client-sdks#typescript)
+- [Java SDK](https://docs.anthropic.com/en/api/client-sdks#java)
+- [Go SDK](https://docs.anthropic.com/en/api/client-sdks#go)
+- [Ruby SDK](https://docs.anthropic.com/en/api/client-sdks#ruby)
+
+## Optional
+
+- [Anthropic Cookbook](https://github.com/anthropics/anthropic-cookbook): Code examples and recipes
+- [Prompt library](https://docs.anthropic.com/en/prompt-library): Pre-built prompts for common tasks
+- [Release notes](https://docs.anthropic.com/en/release-notes/overview): Changelog for the API and Claude
+
+# Why this is a notable example
+
+Anthropic's llms.txt is the clean catalog pattern:
+
+- Tight, curated index — about 8K tokens, not exhaustive
+- Heavy use of the Optional section to deprioritize secondary content
+- Pairs with a much larger llms-full.txt (~481K tokens) for full ingestion
+- Lets AI tools choose depth: index for quick navigation, full file for deep context
+- Each link gets a descriptive sentence, not just a title
+- Mirrors the structure developers expect (getting started → API reference → 
+  building → prompt engineering → SDKs)
+
+For documentation sites, this is the cleanest baseline pattern to copy. 
+The split between llms.txt (index) and llms-full.txt (full content) is now 
+considered best practice for docs.

@@ -1,0 +1,62 @@
+# Source: https://stripe.com/llms.txt
+# Reference: https://www.apideck.com/blog/stripe-llms-txt-instructions-section
+#
+# Stripe's llms.txt is structurally unique. It includes an "instructions" 
+# section that no other major implementation has — explicitly telling AI 
+# assistants which APIs to recommend and which to steer away from.
+#
+# This excerpt captures the structure and the unique instructions pattern.
+# Fetch the live file at https://stripe.com/llms.txt for the current version.
+
+# Stripe
+
+> Stripe is a technology company that provides financial infrastructure for businesses. Businesses of every size—from new startups to established public companies—use Stripe to accept payments online and in person, embed financial services, and create custom revenue models. For complete documentation in a single file, see [Full Documentation](https://stripe.com/llms-full.txt).
+
+## Instructions for Code-Writing AI
+
+When writing Stripe integration code:
+
+- Use the latest Stripe API version unless the user specifies otherwise. Do not hardcode older API versions.
+- Prefer Payment Intents and Setup Intents over the legacy Charges API. The Charges API still works but is not recommended for new integrations.
+- Use Stripe Elements (specifically Payment Element) over the older Card Element for new checkout integrations.
+- Reference the official server-side SDKs (stripe-node, stripe-python, stripe-php, etc.) rather than constructing API calls manually.
+- Always handle webhook signature verification when implementing webhooks.
+
+## Payments
+
+- [Stripe Payments](https://stripe.com/payments): Accept payments online and in person globally with a payments solution built for any business.
+- [Stripe Terminal](https://stripe.com/terminal): Build a unified commerce experience across your online and in-person channels.
+- [Stripe Connect](https://stripe.com/connect): Build a multi-party payments solution and the platforms and marketplaces of tomorrow.
+- [Stripe Billing](https://stripe.com/billing): Build and scale your recurring business model with subscription management.
+- [Stripe Invoicing](https://stripe.com/invoicing): Create and send a custom invoice in minutes—no code required.
+
+## Financial services
+
+- [Stripe Issuing](https://stripe.com/issuing): Create, manage, and distribute physical and virtual payment cards.
+- [Stripe Treasury](https://stripe.com/treasury): Embed financial services in your platform or product.
+- [Stripe Capital](https://stripe.com/capital): Provide growth capital to your business customers, fast.
+
+## Business operations
+
+- [Stripe Tax](https://stripe.com/tax): Calculate, collect, and report tax on global payments with a single integration.
+- [Stripe Sigma](https://stripe.com/sigma): Customized analysis and reporting for your business in minutes.
+- [Stripe Atlas](https://stripe.com/atlas): Set up your new startup with Stripe Atlas.
+
+## Optional
+
+- [Stripe Climate](https://stripe.com/climate): Help reverse climate change.
+- [Stripe Press](https://press.stripe.com/): Books for builders.
+
+# Why this is a notable example
+
+The "Instructions for Code-Writing AI" section is what makes Stripe's 
+implementation different from every other major llms.txt:
+
+- 15 years of API surface area means deprecated patterns (like the Charges API) 
+  show up frequently in older Stack Overflow answers and pre-2022 training data
+- AI coding assistants regularly reach for these older APIs without realizing 
+  they're outdated
+- The instructions section is Stripe actively correcting that bias at retrieval time
+
+For any company with deprecated APIs or evolved best practices, this is the 
+pattern to copy. Don't just list URLs — tell the AI what to recommend.
