@@ -48,35 +48,35 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 
 | File                | Status | Path                       | AI prompt                           | Spec                                                                                                      |
 | ------------------- | ------ | -------------------------- | -------------------------------- | --------------------------------------------------------------------------------------------------------- |
-| `robots.txt`        | ✅     | `/robots.txt`              | [📋](prompts/robots-txt.md)      | [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309)                                                        |
-| `ai.txt` (Spawning) | ⚠️     | `/ai.txt`                  | [📋](prompts/ai-txt-spawning.md) | [spawning.ai](https://site.spawning.ai/spawning-ai-txt)                                                   |
-| `tdmrep.json`       | ✅ EU  | `/.well-known/tdmrep.json` | [📋](prompts/tdmrep-json.md)     | [W3C](https://w3c.github.io/tdm-reservation-protocol/spec/)                                               |
-| AI meta tags        | ⚠️     | HTML `<head>`              | [📋](prompts/ai-meta-tags.md)    | [IPTC](https://iptc.org/std/guidelines/data-mining-opt-out/IPTC-Generative-AI-Opt-Out-Best-Practices.pdf) |
+| `robots.txt`        | ✅     | `/robots.txt`              | [View →](prompts/robots-txt.md)      | [RFC 9309](https://www.rfc-editor.org/rfc/rfc9309)                                                        |
+| `ai.txt` (Spawning) | ⚠️     | `/ai.txt`                  | [View →](prompts/ai-txt-spawning.md) | [spawning.ai](https://site.spawning.ai/spawning-ai-txt)                                                   |
+| `tdmrep.json`       | ✅ EU  | `/.well-known/tdmrep.json` | [View →](prompts/tdmrep-json.md)     | [W3C](https://w3c.github.io/tdm-reservation-protocol/spec/)                                               |
+| AI meta tags        | ⚠️     | HTML `<head>`              | [View →](prompts/ai-meta-tags.md)    | [IPTC](https://iptc.org/std/guidelines/data-mining-opt-out/IPTC-Generative-AI-Opt-Out-Best-Practices.pdf) |
 
 ### Visibility files — help AI find and understand your content
 
 | File                    | Status | Path               | AI prompt                              | Spec                                                                                   |
 | ----------------------- | ------ | ------------------ | ----------------------------------- | -------------------------------------------------------------------------------------- |
-| `llms.txt`              | ⚠️     | `/llms.txt`        | [📋](prompts/llms-txt.md)           | [llmstxt.org](https://llmstxt.org/)                                                    |
-| `llms-full.txt`         | ⚠️     | `/llms-full.txt`   | [📋](prompts/llms-full-txt.md)      | [convention](https://www.mintlify.com/blog/how-to-generate-llmstxt-file-automatically) |
-| `.md` page routes       | ⚠️     | `/page.md`         | [📋](prompts/md-routes.md)          | [llmstxt.org](https://llmstxt.org/)                                                    |
-| Markdown link discovery | ✅     | `<head>` + headers | [📋](prompts/markdown-discovery.md) | HTTP                                                                                   |
-| Hidden AI hint div      | ⚠️     | `<body>`           | [📋](prompts/ai-hint-div.md)        | convention                                                                             |
-| `schema.org` JSON-LD    | ✅     | `<script>` block   | [📋](prompts/schema-jsonld.md)      | [schema.org](https://schema.org)                                                       |
+| `llms.txt`              | ⚠️     | `/llms.txt`        | [View →](prompts/llms-txt.md)           | [llmstxt.org](https://llmstxt.org/)                                                    |
+| `llms-full.txt`         | ⚠️     | `/llms-full.txt`   | [View →](prompts/llms-full-txt.md)      | [convention](https://www.mintlify.com/blog/how-to-generate-llmstxt-file-automatically) |
+| `.md` page routes       | ⚠️     | `/page.md`         | [View →](prompts/md-routes.md)          | [llmstxt.org](https://llmstxt.org/)                                                    |
+| Markdown link discovery | ✅     | `<head>` + headers | [View →](prompts/markdown-discovery.md) | HTTP                                                                                   |
+| Hidden AI hint div      | ⚠️     | `<body>`           | [View →](prompts/ai-hint-div.md)        | convention                                                                             |
+| `schema.org` JSON-LD    | ✅     | `<script>` block   | [View →](prompts/schema-jsonld.md)      | [schema.org](https://schema.org)                                                       |
 
 ### Agent files — make your site queryable by AI agents
 
 | File                    | Status | Path                           | AI prompt                           | Spec                                                  |
 | ----------------------- | ------ | ------------------------------ | -------------------------------- | ----------------------------------------------------- |
-| NLWeb                   | 🚀     | `/ask` endpoint                | [📋](prompts/nlweb.md)           | [microsoft/NLWeb](https://github.com/microsoft/NLWeb) |
-| `agent-card.json` (A2A) | 🚀     | `/.well-known/agent-card.json` | [📋](prompts/agent-card-json.md) | [A2A](https://a2a-protocol.org/)                      |
-| `mcp.json`              | 🚀     | `/.well-known/mcp.json`        | [📋](prompts/mcp-json.md)        | [MCP](https://modelcontextprotocol.io/)               |
+| NLWeb                   | 🚀     | `/ask` endpoint                | [View →](prompts/nlweb.md)           | [microsoft/NLWeb](https://github.com/microsoft/NLWeb) |
+| `agent-card.json` (A2A) | 🚀     | `/.well-known/agent-card.json` | [View →](prompts/agent-card-json.md) | [A2A](https://a2a-protocol.org/)                      |
+| `mcp.json`              | 🚀     | `/.well-known/mcp.json`        | [View →](prompts/mcp-json.md)        | [MCP](https://modelcontextprotocol.io/)               |
 
 ### Coding agent files — for repos, not websites
 
 | File        | Status | Path         | AI prompt                     | Spec                            |
 | ----------- | ------ | ------------ | -------------------------- | ------------------------------- |
-| `AGENTS.md` | ✅     | `/AGENTS.md` | [📋](prompts/agents-md.md) | [agents.md](https://agents.md/) |
+| `AGENTS.md` | ✅     | `/AGENTS.md` | [View →](prompts/agents-md.md) | [agents.md](https://agents.md/) |
 
 ### Coming soon
 
