@@ -14,7 +14,8 @@ One file per prompt. Each file is self-contained: prompt, gotchas, verification,
 - [`llms-txt.md`](llms-txt.md): curated content index for AI
 - [`llms-full-txt.md`](llms-full-txt.md): full content concatenation (3-4× more traffic than llms.txt)
 - [`md-routes.md`](md-routes.md): clean markdown at `.md` URLs
-- [`markdown-discovery.md`](markdown-discovery.md): `<link>` tag, HTTP `Link` header, content negotiation
+- [`markdown-discovery.md`](markdown-discovery.md): `<link>` tag + HTTP `Link` header
+- [`content-negotiation.md`](content-negotiation.md): same URL serves markdown when `Accept: text/markdown` is sent
 - [`ai-hint-div.md`](ai-hint-div.md): visually hidden hint for paste-into-AI
 - [`schema-jsonld.md`](schema-jsonld.md): schema.org structured data
 

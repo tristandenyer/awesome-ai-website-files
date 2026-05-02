@@ -28,7 +28,7 @@ Most LLM HTML parsers strip comments before the model sees the content. Use a [h
 
 ## "Human / AI" toggle buttons
 
-Agents don't click buttons. They fetch URLs. Provide the alternate URL via `<link>` tag, HTTP header, or content negotiation. See [markdown discovery](../prompts/markdown-discovery.md).
+Agents don't click buttons. They fetch URLs. Provide the alternate URL via [`<link>` tag and HTTP `Link:` header](../prompts/markdown-discovery.md), or via [`Accept: text/markdown` content negotiation](../prompts/content-negotiation.md).
 
 ## Dedicated "AI info pages"
 
@@ -40,7 +40,7 @@ A page at `/ai` or `/for-ai` describing your site. No retrieval system treats th
 if (userAgent contains "GPTBot") { serve markdown } else { serve HTML }
 ```
 
-This is cloaking. It violates Google's webmaster guidelines and can hurt your search rankings. Use `Accept: text/markdown` content negotiation instead: same URL, different representation, declared via `Vary: Accept`. See [markdown discovery](../prompts/markdown-discovery.md).
+This is cloaking. It violates Google's webmaster guidelines and can hurt your search rankings. Use `Accept: text/markdown` content negotiation instead: same URL, different representation, declared via `Vary: Accept`. See [content negotiation](../prompts/content-negotiation.md).
 
 ## "Submit your site to ChatGPT"
 

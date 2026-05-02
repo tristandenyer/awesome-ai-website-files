@@ -83,17 +83,17 @@ curl -s https://yoursite.com/some-page.md | wc -w
 
 ## After you ship this
 
-Pair it with [`markdown-discovery.md`](markdown-discovery.md) so AI clients can actually find these routes via:
+Pair it with the discovery mechanisms so AI clients can actually find these routes:
 
-- `<link rel="alternate" type="text/markdown">` in `<head>`
-- `Link:` HTTP header
-- `Accept: text/markdown` content negotiation
+- [`markdown-discovery.md`](markdown-discovery.md): `<link rel="alternate" type="text/markdown">` in `<head>` and the matching HTTP `Link:` header
+- [`content-negotiation.md`](content-negotiation.md): serve markdown from the same URL when the client sends `Accept: text/markdown`
 
 Without discovery, only humans pasting URLs benefit. With discovery, headless agents (Claude Code, Cursor) fetch the markdown directly.
 
 ## See also
 
-- [Prompt: Markdown link discovery](markdown-discovery.md): advertise these routes to AI clients
+- [Prompt: Markdown link discovery](markdown-discovery.md): advertise these routes via `<link>` tag and `Link:` header
+- [Prompt: Content negotiation](content-negotiation.md): serve markdown from the same URL via `Accept: text/markdown`
 - [Prompt: `llms.txt`](llms-txt.md): link into your `.md` routes from a curated index
 - [Platform guides](../files/platforms/): stack-specific instructions
 - [llmstxt.org](https://llmstxt.org/): the convention these routes complement

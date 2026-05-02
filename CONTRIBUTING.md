@@ -84,7 +84,7 @@ Before opening:
 
 ## AI Prompt to get started
 
-Pick the prompt that matches what you're contributing. Paste it into Claude, ChatGPT, or any other LLM. The output is a starting draft, not a finished PR — you still need to verify facts, add citations, and run the PR checklist above.
+Pick the prompt that matches what you're contributing. Paste it into Claude, ChatGPT, or any other LLM. The output is a starting draft, not a finished PR. You still need to verify facts, add citations, and run the PR checklist above.
 
 ### A) Adding a new prompt file
 
@@ -98,9 +98,9 @@ at templates/prompt.md. Existing prompts in prompts/ show the expected style.
 The file I'm adding a prompt for:
   Name: [FILE NAME, e.g., "robots.txt", "tdmrep.json", "/.well-known/foo.json"]
   Path on a website: [WHERE IT LIVES, e.g., /robots.txt]
-  Spec or proposal URL: [REQUIRED — primary source]
+  Spec or proposal URL: [REQUIRED: primary source]
   Status (✅ / ⚠️ / 🚀 / 🚧): [PICK ONE per the badge guide]
-  Known adopters: [LIST — required for ✅ and ⚠️]
+  Known adopters: [LIST; required for ✅ and ⚠️]
   Why doers should care: [1-2 SENTENCES]
 
 Generate a complete prompts/[file-slug].md following the template exactly:
@@ -112,7 +112,7 @@ Generate a complete prompts/[file-slug].md following the template exactly:
 - "See also" linking to spec, examples, related prompts
 
 Match the prose style of existing files in prompts/ (technical, terse,
-no marketing language). Do not invent adopters or status — if I left a
+no marketing language). Do not invent adopters or status. If I left a
 field blank, ask me before guessing.
 ```
 
@@ -143,7 +143,7 @@ Generate two things:
    existing table format.
 
 Real production files only. If I haven't given you the actual content,
-ask for it — do not fabricate.
+ask for it. Do not fabricate.
 ```
 
 ### C) Adding a platform guide
@@ -175,7 +175,7 @@ commands and a "Heads up" section with platform-specific caveats
 (caching, theme overrides, .well-known support, etc.).
 
 If I left a field blank, ask before guessing. Do not invent plugins or
-features — link to real, current docs.
+features. Link to real, current docs.
 ```
 
 After the AI generates a draft, run through the **PR checklist** above before opening the PR. Spec links must work, status must reflect real adoption, no fabricated adopters or plugins.

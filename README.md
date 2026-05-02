@@ -61,6 +61,7 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 | `llms-full.txt`         | ⚠️     | `/llms-full.txt`   | [View →](prompts/llms-full-txt.md)  | [convention](https://www.mintlify.com/blog/how-to-generate-llmstxt-file-automatically) |
 | `.md` page routes       | ⚠️     | `/page.md`         | [View →](prompts/md-routes.md)      | [llmstxt.org](https://llmstxt.org/)                                                    |
 | Markdown link discovery | ✅     | `<head>` + headers | [View →](prompts/markdown-discovery.md) | HTTP                                                                                   |
+| Content negotiation     | ✅     | `Accept` header    | [View →](prompts/content-negotiation.md) | [RFC 9110](https://www.rfc-editor.org/rfc/rfc9110#name-content-negotiation)            |
 | Hidden AI hint div      | ⚠️     | `<body>`           | [View →](prompts/ai-hint-div.md)    | convention                                                                             |
 | `schema.org` JSON-LD    | ✅     | `<script>` block   | [View →](prompts/schema-jsonld.md)  | [schema.org](https://schema.org)                                                       |
 

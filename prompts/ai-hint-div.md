@@ -55,7 +55,7 @@ Output as a single code block with comments explaining each piece.
 - **Don't keyword-stuff.** One clean sentence pointing at the markdown URL. Anything beyond that crosses into 1990s SEO.
 - **`aria-hidden="true"` is doing real work.** Without it, screen readers announce the message to blind users, which is a real accessibility regression. Don't skip it.
 - **`display: none` may backfire.** Some text extractors honor `display: none` and skip the content (which defeats your purpose). Use the visually-hidden CSS pattern (clip + 1×1 size) instead.
-- **Prefer the explicit signals first.** [`<link rel="alternate">`](markdown-discovery.md), the `Link:` HTTP header, and [`Accept: text/markdown`](markdown-discovery.md) content negotiation are all standard, declared mechanisms. Reach for the hidden div only after you've shipped the standards-based ones.
+- **Prefer the explicit signals first.** [`<link rel="alternate">` and the `Link:` HTTP header](markdown-discovery.md), plus [`Accept: text/markdown` content negotiation](content-negotiation.md), are all standard, declared mechanisms. Reach for the hidden div only after you've shipped the standards-based ones.
 - **Per-page URL is mandatory.** A hidden div pointing at "the site's markdown" is useless for a specific blog post. Make sure each page's div references THAT page's canonical markdown URL.
 
 ## Verify it's working
@@ -74,6 +74,7 @@ You can also test by pasting your URL into Claude or ChatGPT and asking what AI-
 
 ## See also
 
-- [Prompt: Markdown link discovery](markdown-discovery.md): standards-based mechanisms; ship these first
+- [Prompt: Markdown link discovery](markdown-discovery.md): `<link>` tag and `Link:` header; ship these first
+- [Prompt: Content negotiation](content-negotiation.md): server-side markdown via `Accept: text/markdown`
 - [Prompt: `.md` page routes](md-routes.md): what the div should point to
 - [Inclusively Hidden, by Scott O'Hara on visually-hidden CSS patterns](https://www.scottohara.me/blog/2017/04/14/inclusively-hidden.html)
