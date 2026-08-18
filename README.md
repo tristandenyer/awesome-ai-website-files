@@ -52,6 +52,7 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 | `ai.txt` (Spawning) | ⚠️     | `/ai.txt`                  | [View →](prompts/ai-txt-spawning.md) | [spawning.ai](https://site.spawning.ai/spawning-ai-txt)                                                   |
 | `tdmrep.json`       | ✅ EU  | `/.well-known/tdmrep.json` | [View →](prompts/tdmrep-json.md)     | [W3C](https://w3c.github.io/tdm-reservation-protocol/spec/)                                               |
 | AI meta tags        | ⚠️     | HTML `<head>`              | [View →](prompts/ai-meta-tags.md)    | [IPTC](https://iptc.org/std/guidelines/data-mining-opt-out/IPTC-Generative-AI-Opt-Out-Best-Practices.pdf) |
+| Content Signals     | 🚀     | `/robots.txt` directives   | [View →](prompts/content-signals.md) | [contentsignals.org](https://contentsignals.org/)                                                         |
 
 ### Visibility files: help AI find and understand your content
 
@@ -72,6 +73,7 @@ Status: ✅ Adopted · ⚠️ Emerging · 🚀 New · 🚧 Coming soon
 | NLWeb                   | 🚀     | `/ask` endpoint                | [View →](prompts/nlweb.md)           | [microsoft/NLWeb](https://github.com/microsoft/NLWeb) |
 | `agent-card.json` (A2A) | 🚀     | `/.well-known/agent-card.json` | [View →](prompts/agent-card-json.md) | [A2A](https://a2a-protocol.org/)                      |
 | `mcp.json`              | 🚀     | `/.well-known/mcp.json`        | [View →](prompts/mcp-json.md)        | [MCP](https://modelcontextprotocol.io/)               |
+| `api-catalog`           | 🚀     | `/.well-known/api-catalog`     | [View →](prompts/api-catalog.md)     | [RFC 9727](https://www.rfc-editor.org/rfc/rfc9727.html) |
 
 ### Coding agent files: for repos, not websites
 
@@ -123,7 +125,7 @@ These show up in other guides but don't belong here. See [`files/myths.md`](file
 - `security.txt`: real, useful, not AI-related
 - `<meta name="ai-content-url">`: no spec, no implementation
 - `<meta name="llms">`: submitted to WHATWG, [closed as not planned](https://github.com/whatwg/html/issues/11548)
-- `/.well-known/ai.txt`: multiple competing proposals, no adoption
+- `/.well-known/ai.txt`: was "no adoption" for years; now has an [IETF draft](https://datatracker.ietf.org/doc/draft-car-ai-txt-wellknown/) (June 2026) with Training/Scraping/Indexing/Caching fields — promoted to watch-list, still near-zero adoption
 - HTML comments for AI: most parsers strip them
 - User-Agent sniffing: that's cloaking; use `Accept: text/markdown` instead
 
