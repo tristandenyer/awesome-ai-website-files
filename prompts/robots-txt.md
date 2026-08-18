@@ -120,6 +120,7 @@ The list of AI crawlers changes constantly — [ai-robots-txt](https://github.co
 
 ## See also
 
+- [Full guide: which AI crawlers to block, and which to allow](https://www.tristandenyer.com/work/robots-txt-for-ai-agents) — the four bot classes explained, with an annotated production example and this prompt in context
 - [Real production example: postman.com/robots.txt](https://www.postman.com/robots.txt) — four annotated bot classes, shared rule block, crawl traps closed
 - [Real example: Anthropic's robots.txt](https://www.anthropic.com/robots.txt)
 - [robots.txt in the AI files guide](https://www.tristandenyer.com/work/ai-files-for-websites-2026#1-robotstxt-updated-for-the-ai-era)
