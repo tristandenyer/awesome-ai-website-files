@@ -6,6 +6,8 @@
 
 📖 **[Read the full guide →](https://www.tristandenyer.com/work/ai-files-for-websites-2026)** for the why, the context, and the full breakdown.
 
+🔍 **Check your site:** `npx ai-readiness-check check https://your-site.com` runs 19 checks and links every problem to its prompt in this repo. Works locally, in CI, and with AI coding agents. [GitHub](https://github.com/tristandenyer/ai-readiness-check) · [npm](https://www.npmjs.com/package/ai-readiness-check)
+
 This repo is the **doer's version**: skip to the file you need, grab the prompt, ship it.
 
 ---
